@@ -1,0 +1,108 @@
+[versions]
+#Libs versions
+ktx_version = "1.12.0"
+lifecycle_runtime_ktx_version = "2.6.2"
+lifecycle_runtime_compose_version = "2.6.2"
+compose_boom_version = "2023.10.01"
+compose_material_version = "1.5.4"
+compose_activity_version = "1.8.2"
+compose_material_icons_version = "1.5.0-beta02"
+
+timber_version = "5.0.1"
+
+lottie_version = "6.1.0"
+
+hilt_version = '2.48.1'
+hilt_complier_version = '1.1.0'
+nav_version = '1.1.0'
+
+retrofit_coroutines_adapter_version = '0.9.2'
+retrofit_version = '2.9.0'
+retrofit_logging_version = '5.0.0-alpha.10'
+
+moshi_version = '1.15.0'
+moshi_kotlin_version = '1.14.0'
+moshi_kotlin_codegen_version = '1.14.0'
+
+coil_version = "2.4.0"
+coroutines_version = '1.7.3'
+
+#Testing libs
+junit = "4.13.2"
+junitExt = "1.1.5"
+espresso-core = "3.5.1"
+mock-web-server = "4.6.0"
+mockito-kotlin = "2.2.0"
+
+#Plugin versions
+androidGradlePlugin = "8.2.0"
+kotlin_version = '1.9.20'
+
+[libraries]
+androidx-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktx_version" }
+lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle_runtime_ktx_version" }
+
+lottie = { group = "com.airbnb.android", name = "lottie-compose", version.ref = "lottie_version" }
+
+# compose libs
+androidx-compose-boom = { group = "androidx.compose", name = "compose-bom", version.ref = "compose_boom_version" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-compose-ui-graphic = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3" }
+
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "compose_activity_version" }
+androidx-compose-material = { group = "androidx.compose.material", name = "material", version.ref = "compose_material_version" }
+
+androidx-compose-lifecycle = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycle_runtime_compose_version" }
+
+androidx-compose-material-icons-extended = { group = "androidx.compose.material", name = "material-icons-extended-android", version.ref = "compose_material_icons_version" }
+
+
+# dagger - hilt
+dagger-hilt = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt_version" }
+dagger-hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt_version" }
+hilt-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hilt_complier_version" }
+
+# coroutines
+coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "coroutines_version" }
+coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutines_version" }
+
+# navigation
+navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "nav_version" }
+
+# retrofit
+retrofit = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofit_version" }
+retrofit-converter-moshi = { group = "com.squareup.retrofit2", name = "converter-moshi", version.ref = "retrofit_version" }
+retrofit-coroutines-adapter = { group = "com.jakewharton.retrofit", name = "retrofit2-kotlin-coroutines-adapter", version.ref = "retrofit_coroutines_adapter_version" }
+retrofit-logging-interceptor = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "retrofit_logging_version" }
+
+# moshi
+moshi = { group = "com.squareup.moshi", name = "moshi", version.ref = "moshi_version" }
+moshi-kotlin = { group = "com.squareup.moshi", name = "moshi-kotlin", version.ref = "moshi_kotlin_version" }
+moshi-kotlin-codegen = { group = "com.squareup.moshi", name = "moshi-kotlin-codegen", version.ref = "moshi_kotlin_codegen_version" }
+
+
+# coil
+coil = { group = "io.coil-kt", name = "coil-compose", version.ref = "coil_version" }
+
+# logging
+timber = { group = "com.jakewharton.timber", name = "timber", version.ref = "timber_version" }
+
+# tests
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+junitExt = { group = "androidx.test.ext", name = "junit", version.ref = "junitExt" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+mock-web-server = { group = "com.squareup.okhttp3", name = "mockwebserver", version.ref = "mock-web-server" }
+mockito-kotlin = { group = "com.nhaarman.mockitokotlin2", name = "mockito-kotlin", version.ref = "mockito-kotlin" }
+
+
+
+# hilt plugin
+hilt-android-gradle-plugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hilt_version" }
+kotlin-gradle-plugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin_version" }
+
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin_version" }
